@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: sise-deploy
 spec:
+   selector:
+    matchLabels:
+      app: sise
   replicas: 2
   template:
     metadata:
